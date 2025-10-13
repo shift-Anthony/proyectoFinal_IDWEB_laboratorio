@@ -1,0 +1,88 @@
+/* Estilos generales */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background-color: #f4f4f4;
+}
+
+/* Header y navegación */
+header {
+  background-color: #333;
+  color: white;
+  padding: 10px 0;
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav ul li a:hover,
+nav ul li a.activo {
+  text-decoration: underline;
+}
+
+/* Contenido principal */
+main {
+  padding: 10px;
+  width: 30%;
+  margin: auto;
+  text-align:justify;
+}
+
+/* Footer */
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  height: 40px;
+  bottom: 0;
+  width: 100%;
+}
+
+h2{
+    text-align: center;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between; /* separa elementos */
+  align-items: center;            /* centra verticalmente */
+  width: 90%;
+  margin: auto;
+}
+
+
+/* Botones */
+.button-header {
+  display: flex;
+  gap: 10px;
+}
+.boton {
+  background-color: white;
+  color: black;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 15px;
+}
+.boton-derecha:hover {
+  background-color: #777;
+}
+#contacto{
+    text-align: center;
+}
