@@ -21,9 +21,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 document.getElementById(elementId).innerHTML = `<p style="color:red;">Error al cargar ${elementId}.</p>`;
             });
     };
-
-    // Carga el header en su placeholder
+    // Carga el header y footer
     loadComponent('/pages/header.html', 'header-placeholder');
-    // Carga el footer en su placeholder
     loadComponent('/pages/footer.html', 'footer-placeholder');
 });

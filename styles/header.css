@@ -1,0 +1,35 @@
+/* --- Estilos del Header --- */
+.main-header {
+    background-color: #fdfdfb;
+    padding: 15px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.08);
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.main-nav ul {
+    list-style: none;
+    display: flex;
+    gap: 10px;
+    margin: 0;
+    padding: 0;
+}
+
+.main-nav a,
+.header-index {
+    color: #333;
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: bold;
+    padding: 12px 18px;
+    border-radius: 6px;
+    transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+}
+.main-nav a:hover {
+    color: #006442;
+    background-color: #e8f5e9;
+}
