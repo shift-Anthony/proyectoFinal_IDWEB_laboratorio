@@ -23,8 +23,7 @@ document.addEventListener("DOMContentLoaded", () => {
     };
 
     // Carga el header en su placeholder
-    loadComponent('pages/header.html', 'header-placeholder');
-
+    loadComponent('/pages/header.html', 'header-placeholder');
     // Carga el footer en su placeholder
-    loadComponent('pages/footer.html', 'footer-placeholder');
+    loadComponent('/pages/footer.html', 'footer-placeholder');
 });
