@@ -42,6 +42,26 @@ function datosProfesor() {
     });
 }
 document.addEventListener("DOMContentLoaded", () => {
+    // Cargar header y footer en todas las páginas
+    const loadComponent = (url, elementId) => {
+        fetch(url)
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error('No se pudo cargar el recurso: ' + url);
+                }
+                return response.text();
+            })
+            .then(data => {
+                document.getElementById(elementId).innerHTML = data;
+            })
+            .catch(error => {
+                console.error('Error al cargar componente:', error);
+                document.getElementById(elementId).innerHTML = `<p style="color:red;">Error al cargar ${elementId}.</p>`;
+            });
+    };
+    loadComponent('/pages/header.html', 'header-placeholder');
+    loadComponent('/pages/footer.html', 'footer-placeholder');
+
     // Lógica específica por página (usando el ID del body o checks)
     if (document.getElementById('formProfesor')) {
         // Lógica para registro_basico.html
